@@ -33,10 +33,12 @@ const vocabularies = [
 
 function FlashCard() {
     const handleStarClick = (event) => {
-        console.log("Here I am")
+        console.log(event.currentTarget)
     };
     const handleExampleClick = (event) => {
-        alert("Great Shot!");
+        const example = vocabularies.map(({ example }) => example)
+        console.log(event.currentTarget.parentNode)
+        // window.alert(event.currentTarget.parentNode)
     };
     return (
       <div>

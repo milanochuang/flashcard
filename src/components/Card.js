@@ -8,6 +8,7 @@ export default function Card({
     word,
     part_of_speech,
     definition,
+    example,
     handleExampleClick,
   }) { return (
       <>
@@ -17,7 +18,7 @@ export default function Card({
             icon="fa-star"
             className="fa-star"
             id={`star-${id}`}
-         onClick={handleStarClick}
+            onClick={handleStarClick}
         />
         </Button>
           <h2 className="word">{word}</h2>
